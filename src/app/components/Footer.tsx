@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className='flex flex-row items-center justify-between px-5'>
                     <div className='flex flex-col items-start px-4'>
                         <div className=''>
-                            <h3 className='font-serif text-2xl'> I'm Vincent Chan</h3>
+                            <h3 className='font-serif text-2xl'>I&apos;m Vincent Chan</h3>
                         </div>
                         <div className=''>
                             <p className=' text-lg'>A Master Student in the Field of Engineering.</p>

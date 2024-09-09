@@ -33,7 +33,7 @@ export default function Home() {
                             <div className="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4 overflow-hidden">
                                 {/* Company logo would go here */}
                                 <div className="w-full h-full bg-gray-50">
-                                    <Image className="rounded-3xl" src="/NTU ICON.png" alt="Logo" width={300} height={300} />
+                                    <Image className="rounded-3xl" src="/Images/NTU ICON.png" alt="Logo" width={300} height={300} />
                                 </div>
                             </div>
                             <div className="flex-grow w-3/5 mr-4">
@@ -48,7 +48,7 @@ export default function Home() {
                         <div className="bg-white rounded-full shadow-md p-4 flex items-center">
                             <div className="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4 overflow-hidden">
                                 <div className="w-full h-full bg-gray-50">
-                                    <Image className="rounded-3xl" src="/NTU ICON.png" alt="Logo" width={300} height={300} />
+                                    <Image className="rounded-3xl" src="/Images/NTU ICON.png" alt="Logo" width={300} height={300} />
                                 </div>
                             </div>
                             <div className="flex-grow w-3/5 mr-4">
