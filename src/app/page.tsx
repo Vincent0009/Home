@@ -1,9 +1,33 @@
+'use client';
 import Image from "next/image";
 import Intro from "./components/Intro";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [isNarrow, setIsNarrow] = useState(false);
+
+    useEffect(() => {
+        const adjustLayout = () => {
+            const container = document.getElementById('responsive-container');
+            if (container) {
+                setIsNarrow(container.offsetWidth < 400);
+            }
+        };
+
+        // Initial check
+        adjustLayout();
+
+        // Add event listener
+        window.addEventListener('resize', adjustLayout);
+
+        // Cleanup
+        return () => window.removeEventListener('resize', adjustLayout);
+    }, []);
+
+    
+
     return (
         <div className="flex flex-col items-center lg:flex-row lg:px-20 lg:items-stretch">
 
@@ -28,34 +52,33 @@ export default function Home() {
                         Education
                     </h3>
 
-                    <div className="space-y-4">
-                        <div className="bg-white rounded-full shadow-md p-4 flex items-center">
-                            <div className="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4 overflow-hidden">
-                                {/* Company logo would go here */}
-                                <div className="w-full h-full bg-gray-50">
+                    <div id="responsive-container" className="space-y-4">
+                        <div className={`responsive-item bg-white rounded-full shadow-md p-4 flex items-center ${isNarrow ? 'flex-col text-center' : 'flex-row text-left'}`}>
+                            <div className={`responsive-item w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 overflow-hidden ${isNarrow ? 'mb-2 mr-0': 'mb-0 mr-4'}`}>
+                                <div className={`w-full h-full bg-gray-50`}>
                                     <Image className="rounded-3xl" src="/Images/NTU ICON.png" alt="Logo" width={300} height={300} />
                                 </div>
                             </div>
-                            <div className="flex-grow w-3/5 mr-4">
-                                <h3 className="text-lg font-semibold truncate">National Taiwan University</h3>
-                                <p className="text-gray-600 font-medium">MEng, Computer Aided Engineering, Civil Engineering</p>
+                            <div className={`flex-grow ${isNarrow ? 'mb-2 mr-0 text-center' : 'w-3/5 mb-0 mr-4 text-left'}`}>
+                                <h3 className={`font-semibold truncate ${isNarrow ? 'text-base': 'text-lg'}`}>National Taiwan University</h3>
+                                <p className={`text-gray-600 font-medium ${isNarrow ? 'text-sm': 'text-base'}`}>MEng, Computer Aided Engineering, Civil Engineering</p>
                             </div>
-                            <div className="text-gray-500 text-sm w-1/4 text-right">
+                            <div className={`text-gray-500 text-sm ${isNarrow ? 'mb-2 mr-0 text-center' : 'w-2/5 text-right'} `}>
                                 Sep 2023 - Present
                             </div>
                         </div>
 
-                        <div className="bg-white rounded-full shadow-md p-4 flex items-center">
-                            <div className="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4 overflow-hidden">
-                                <div className="w-full h-full bg-gray-50">
+                        <div className={`responsive-item bg-white rounded-full shadow-md p-4 flex items-center ${isNarrow ? 'flex-col text-center' : 'flex-row text-left'}`}>
+                            <div className={`responsive-item w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 overflow-hidden ${isNarrow ? 'mb-2 mr-0': 'mb-0 mr-4'}`}>
+                                <div className={`w-full h-full bg-gray-50`}>
                                     <Image className="rounded-3xl" src="/Images/NTU ICON.png" alt="Logo" width={300} height={300} />
                                 </div>
                             </div>
-                            <div className="flex-grow w-3/5 mr-4">
-                                <h3 className="text-lg font-semibold truncate">National Taiwan University</h3>
-                                <p className="text-gray-600 font-medium">BE, Civil Engineering</p>
+                            <div className={`flex-grow ${isNarrow ? 'mb-2 mr-0 text-center' : 'w-3/5 mb-0 mr-4 text-left'}`}>
+                                <h3 className={`font-semibold truncate ${isNarrow ? 'text-base': 'text-lg'}`}>National Taiwan University</h3>
+                                <p className={`text-gray-600 font-medium ${isNarrow ? 'text-sm': 'text-base'}`}>BE, Civil Engineering</p>
                             </div>
-                            <div className="text-gray-500 text-sm w-2/5 text-right">
+                            <div className={`text-gray-500 text-sm ${isNarrow ? 'mb-2 mr-0 text-center' : 'w-2/5 text-right'} `}>
                                 Sep 2019 - Jun 2023
                             </div>
                         </div>
