@@ -1,6 +1,6 @@
 # Vincent Chan's Portfolio Website
 
-![Portfolio Website](https://i.imgur.com/your_image_here.jpg)
+[Portfolio Website](https://vincentchanhome.com)
 
 ## 🚀 Overview
 
@@ -31,7 +31,14 @@ A modern, responsive portfolio website built with Next.js 14, showcasing my skil
 - **MongoDB**: NoSQL database for data storage
 - **Mongoose**: MongoDB object modeling
 
-### Tools & Deployment
+### Infrastructure & Deployment
+- **AWS Lightsail**: Cloud hosting platform for the application
+- **Ubuntu**: Linux distribution for the server environment
+- **Nginx**: Web server and reverse proxy configuration
+- **PM2**: Process manager for Node.js applications
+- **Namecheap**: Domain registration provider
+
+### Tools & Development
 - **Git & GitHub**: Version control and code hosting
 - **ESLint**: Code linting
 - **TypeScript**: Static type checking
@@ -110,6 +117,24 @@ A modern, responsive portfolio website built with Next.js 14, showcasing my skil
 - Dynamic component rendering based on viewport width
 - Optimized animations and transitions
 
+## 🌐 Deployment Architecture
+
+### Hosting
+- **AWS Lightsail**: Virtual private server hosting the application
+- **Ubuntu**: Linux distribution running on the server
+- **Nginx**: Configured as a reverse proxy to handle HTTP requests and serve static files
+- **PM2**: Process manager ensuring the Next.js application runs continuously with auto-restart capabilities
+
+### Domain Management
+- **Namecheap**: Domain registration and DNS management
+- **SSL/TLS**: Secure HTTPS connection with SSL certificate
+
+### Deployment Workflow
+1. Build the Next.js application locally
+2. Transfer build files to AWS Lightsail instance
+3. PM2 manages the Node.js process
+4. Nginx routes incoming requests to the Next.js application
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -125,4 +150,4 @@ Feel free to reach out if you have any questions or would like to collaborate:
 ---
 
 Built with ❤️ by Vincent Chan
-
+Last updated: August 1, 2025
