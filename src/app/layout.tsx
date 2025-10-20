@@ -6,8 +6,12 @@ import Footer from "./components/Footer";
 import Link from 'next/link';
 import Intro from "./components/Intro";
 
-const inter = Inter({ subsets: ["latin"] });
-
+// Load the Inter font but with display: 'swap' to avoid FOUC
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  variable: '--font-inter',
+});
 export const metadata: Metadata = {
   title: "Vincent Chan's Website",
   description: "Vincent Chan's Portfolio Website",
@@ -26,15 +30,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`flex flex-col min-h-screen ${inter.className}`}>
+    <html lang="en" className={inter.variable}>
+      <body className="flex flex-col min-h-screen font-sans">
         <Header />
         <main className="flex-grow">
         {children}
         </main>
         <Footer />
       </body>
-      
     </html>
   );
 }

@@ -2,34 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 30, 41, 59; /* slate-800 for better contrast */
-  --background-color: 224, 244, 255; /* Light blue background */
-  
+  --foreground-rgb: 30, 41, 59;
+  /* slate-800 for better contrast */
+  --background-color: 224, 244, 255;
+  /* Light blue background */
+
   /* Color palette */
-  --primary-blue: 59, 130, 246; /* blue-500 */
-  --secondary-blue: 186, 230, 253; /* blue-200 */
-  --accent-blue: 37, 99, 235; /* blue-600 */
-  --accent-indigo: 99, 102, 241; /* indigo-500 */
-  --neutral-light: 248, 250, 252; /* slate-50 */
-  --neutral-medium: 226, 232, 240; /* slate-200 */
-  --neutral-dark: 71, 85, 105; /* slate-600 */
-  
+  --primary-blue: 59, 130, 246;
+  /* blue-500 */
+  --secondary-blue: 186, 230, 253;
+  /* blue-200 */
+  --accent-blue: 37, 99, 235;
+  /* blue-600 */
+  --accent-indigo: 99, 102, 241;
+  /* indigo-500 */
+  --neutral-light: 248, 250, 252;
+  /* slate-50 */
+  --neutral-medium: 226, 232, 240;
+  /* slate-200 */
+  --neutral-dark: 71, 85, 105;
+  /* slate-600 */
+
   /* Updated footer colors - Minimalist deep blue palette */
-  --footer-bg-dark: 30, 41, 59; /* slate-800 - main footer background */
-  --footer-bg-light: 51, 65, 85; /* slate-700 - slightly lighter for hover/accents */
-  --footer-accent: 59, 130, 246; /* blue-500 - accent color matching your primary blue */
-  --footer-text: 226, 232, 240; /* slate-200 - primary text */
-  --footer-text-hover: 248, 250, 252; /* slate-50 - text on hover */
-  --footer-border: 51, 65, 85; /* slate-700 - subtle borders */
-  
+  --footer-bg-dark: 30, 41, 59;
+  /* slate-800 - main footer background */
+  --footer-bg-light: 51, 65, 85;
+  /* slate-700 - slightly lighter for hover/accents */
+  --footer-accent: 59, 130, 246;
+  /* blue-500 - accent color matching your primary blue */
+  --footer-text: 226, 232, 240;
+  /* slate-200 - primary text */
+  --footer-text-hover: 248, 250, 252;
+  /* slate-50 - text on hover */
+  --footer-border: 51, 65, 85;
+  /* slate-700 - subtle borders */
+
   /* Hover effect colors */
-  --card-hover-border: 96, 165, 250; /* blue-400 */
-  --card-hover-text: 29, 78, 216; /* blue-700 */
-  --button-hover-bg: 219, 234, 254; /* blue-100 */
+  --card-hover-border: 96, 165, 250;
+  /* blue-400 */
+  --card-hover-text: 29, 78, 216;
+  /* blue-700 */
+  --button-hover-bg: 219, 234, 254;
+  /* blue-100 */
 }
 
-body, html {
+body,
+html {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-color));
   min-height: 100vh;
@@ -49,7 +69,8 @@ body, html {
   background: rgba(var(--background-color), 1);
   backdrop-filter: blur(100px);
   position: relative;
-  z-index: 50; /* Increased z-index to ensure header is always above other elements */
+  z-index: 50;
+  /* Increased z-index to ensure header is always above other elements */
 }
 
 .bg-dropdown-gradient {
@@ -70,19 +91,19 @@ body, html {
 }
 
 /* IMPROVED: Header links and buttons with !important to ensure consistency */
-header a, 
+header a,
 header button {
   transition: color 0.3s ease, opacity 0.3s ease !important;
 }
 
-header a:hover, 
+header a:hover,
 header button:hover {
   opacity: 1 !important;
   color: rgb(var(--accent-blue)) !important;
 }
 
 /* Updated Footer links and buttons - DEEPER DARK BLUE PALETTE */
-footer a, 
+footer a,
 footer button {
   transition: color 0.3s ease, opacity 0.3s ease, background-color 0.3s ease !important;
 }
@@ -104,20 +125,30 @@ footer button:hover {
   background: linear-gradient(135deg, rgb(var(--primary-blue)), rgb(var(--accent-blue)));
 }
 
-.custom-word-spacing{
+.custom-word-spacing {
   word-spacing: 0.6em;
 }
 
 /* Shimmer animation */
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Scroll animation */
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-scroll {
@@ -130,10 +161,15 @@ footer button:hover {
 
 /* Responsive scroll speeds */
 @media (max-width: 768px) {
-  .animate-scroll { animation-duration: 20s; }
+  .animate-scroll {
+    animation-duration: 20s;
+  }
 }
+
 @media (max-width: 480px) {
-  .animate-scroll { animation-duration: 18s; }
+  .animate-scroll {
+    animation-duration: 18s;
+  }
 }
 
 /* Custom scrollbar */
@@ -172,6 +208,14 @@ button.primary-button:hover {
   transform: translateY(-2px);
 }
 
+/* Web3Modal z-index fixes */
+w3m-modal,
+w3m-modal > *,
+[data-testid*="w3m"],
+[class*="w3m"] {
+  z-index: 9999 !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -206,7 +250,7 @@ button.primary-button:hover {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
-  
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -233,11 +277,11 @@ button.primary-button:hover {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-  
+
   * {
-    @apply border-border;
+    @apply border-[hsl(var(--border))];
   }
-  
+
   body {
     @apply bg-background text-foreground;
   }

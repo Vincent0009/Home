@@ -148,7 +148,7 @@ const Footer = () => {
             {/* Mobile menu dropdown */}
             <div
                 ref={menuRef}
-                className="lg:hidden absolute left-0 right-0 bottom-full bg-slate-800 border-t border-slate-700/50 z-40"
+                className="lg:hidden absolute left-0 right-0 bottom-full bg-slate-800 border-t border-slate-700/50 z-10"
                 style={dropdownStyles}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -158,6 +158,7 @@ const Footer = () => {
                         <MobileFooterNavItem href="/" text="Home" />
                         <MobileFooterNavItem href="/about" text="About" />
                         <MobileFooterNavItem href="/skills" text="Skills" />
+                        <MobileFooterNavItem href="/web3" text="Web3" />
                         <MobileFooterNavItem href="/contact" text="Contact" hasBorder={false} />
                     </ul>
                 </div>
@@ -166,7 +167,7 @@ const Footer = () => {
             {/* Main footer content */}
             <div
                 ref={footerRef}
-                className="w-full text-slate-200 relative z-50"
+                className="w-full text-slate-200 relative z-20"
             >
                 <div className="w-full px-5 lg:px-16 py-8 lg:py-8">
                     <div className='flex justify-between items-start'>
@@ -177,7 +178,7 @@ const Footer = () => {
                                     Vincent
                                 </h3>
                                 <p className='text-base font-light text-slate-400 leading-relaxed max-w-md'>
-                                    Master's student in Engineering, bridging computational modeling
+                                    Master&apos;s student in Engineering, bridging computational modeling
                                     with cutting-edge AI technologies.
                                 </p>
                             </div>
@@ -225,6 +226,7 @@ const Footer = () => {
                                     <FooterNavItem href="/" text="Home" />
                                     <FooterNavItem href="/about" text="About" />
                                     <FooterNavItem href="/skills" text="Skills" />
+                                    <FooterNavItem href="/web3" text="Web3" />
                                     <FooterNavItem href="/contact" text="Contact" />
                                 </ul>
                             </div>
@@ -232,7 +234,7 @@ const Footer = () => {
                             {/* Mobile menu toggle Button */}
                             <button
                                 ref={buttonRef}
-                                className="lg:hidden p-2.5 rounded-lg transition-all duration-300 ease-in-out  hover:bg-slate-700/50 z-50"
+                                className="lg:hidden p-2.5 rounded-lg transition-all duration-300 ease-in-out  hover:bg-slate-700/50 z-30"
                                 onMouseEnter={handleMouseEnter}
                                 onClick={handleMenuToggle}
                                 aria-expanded={menuOpen}

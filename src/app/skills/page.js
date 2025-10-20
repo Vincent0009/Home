@@ -295,7 +295,7 @@ export default function Skills() {
                 transform: 'translate3d(0, 0, 0)',
                 animationDelay: '1s'
               }}
-            />
+              />
           </div>
 
           <div className="container mx-auto px-4 py-20 text-center relative z-10">
@@ -381,7 +381,7 @@ export default function Skills() {
                 </h2>
 
                 <p className="text-lg sm:text-xl mb-8 text-gray-600 max-w-2xl mx-auto">
-                  Let's bring your ideas to life with cutting-edge technology
+                  Let&apos;s bring your ideas to life with cutting-edge technology
                 </p>
 
                 <Link href="/contact">

@@ -153,7 +153,7 @@ export default function Contact() {
             Get in <span className="font-bold">Touch</span>
           </h1>
           <p className={`text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision
+            I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your vision
           </p>
         </div>
       </div>
@@ -361,7 +361,7 @@ export default function Contact() {
                 {/* Connect Section */}
                 <div className="flex flex-col justify-center">
                   <p className="text-gray-600 mb-6">
-                    I'm currently available for freelance work, collaborations, and interesting projects.
+                    I&apos;m currently available for freelance work, collaborations, and interesting projects.
                     If you have a project that you want to get started, think you need my help with something,
                     or just want to say hello, then get in touch.
                   </p>

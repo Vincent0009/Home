@@ -73,3 +73,18 @@ docker-compose.override.yml
 
 # Guide folder and its content
 /Guide/
+
+# Claude Code instructions
+CLAUDE.md
+
+# Hardhat files
+/src/lib/web3/contracts/cache
+/src/lib/web3/contracts/artifacts
+
+# Hardhat test coverage
+coverage
+coverage.json
+
+# Hardhat local node data
+/cache
+/artifacts

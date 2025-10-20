@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 
-export default function testconnection() {
+export default function TestConnection() {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
 

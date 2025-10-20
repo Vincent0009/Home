@@ -5,7 +5,9 @@ import { MongoClient, ObjectId } from 'mongodb';
 const uri = process.env.MONGODB_URI;
 
 export async function GET(request, { params }) {
-  const id = params.id;
+  // Await the params object before accessing its properties
+  const paramsData = await params;
+  const id = paramsData.id;
   const client = new MongoClient(uri);
   
   try {

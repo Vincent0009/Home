@@ -32,17 +32,17 @@ export default function TermsOfService() {
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-slate-800">User Content</h2>
           <p>
-            In these terms of service, "your content" means any text, images, or other material you choose to submit to this website. By uploading your content, you grant us a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish, translate, and distribute it in any media.
+            In these terms of service, &ldquo;your content&rdquo; means any text, images, or other material you choose to submit to this website. By uploading your content, you grant us a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish, translate, and distribute it in any media.
           </p>
           <p className="mt-2">
-            Your content must not be illegal or unlawful, must not infringe any third party's legal rights, and must not be capable of giving rise to legal action whether against you or us or a third party.
+            Your content must not be illegal or unlawful, must not infringe any third party&apos;s legal rights, and must not be capable of giving rise to legal action whether against you or us or a third party.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-slate-800">No Warranties</h2>
           <p>
-            This website is provided "as is" without any representations or warranties, express or implied. We make no representations or warranties in relation to this website or the information and materials provided on this website.
+            This website is provided &ldquo;as is&rdquo; without any representations or warranties, express or implied. We make no representations or warranties in relation to this website or the information and materials provided on this website.
           </p>
           <p className="mt-2">
             Nothing on this website constitutes, or is meant to constitute, advice of any kind. If you require advice in relation to any legal, financial, or medical matter, you should consult an appropriate professional.

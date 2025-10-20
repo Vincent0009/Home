@@ -100,6 +100,7 @@ const Header = () => {
           <ul className="hidden lg:flex lg:flex-row lg:ml-14 font-extralight text-lg">
             <NavItem href="/about" text="About" />
             <NavItem href="/skills" text="Skills" />
+            <NavItem href="/web3" text="Web3" />
             <NavItem href="/contact" text="Contact me" />
           </ul>
         </div>
@@ -142,6 +143,7 @@ const Header = () => {
           <ul className="w-full font-extralight text-lg flex flex-col items-end">
             <MobileNavItem href="/about" text="About" />
             <MobileNavItem href="/skills" text="Skills" />
+            <MobileNavItem href="/web3" text="Web3" />
             <MobileNavItem href="/contact" text="Contact me" hasBorder={false} />
           </ul>
         </div>

@@ -66,17 +66,17 @@ export default function About() {
               <div className="w-full lg:w-3/4 px-4">
                 <div className="bg-white rounded-2xl shadow-xl p-8 border border-blue-100/50 hover:shadow-2xl transition-all duration-300">
                   <p className="text-justify lg:text-justify text-lg text-gray-700 leading-relaxed">
-                    Hi, I'm Vincent, a graduate student at National Taiwan University specializing in Computer Aided Engineering with a primary focus on
+                    Hi, I&apos;m Vincent, a graduate student at National Taiwan University specializing in Computer Aided Engineering with a primary focus on
                     <span className='font-bold'> AI and Deep Learning</span> for acoustic metamaterials design. My research has led to a published paper demonstrating how
-                    <span className='font-bold'> neural networks</span> can revolutionize metamaterial engineering. Through this work, I've developed expertise in
+                    <span className='font-bold'> neural networks</span> can revolutionize metamaterial engineering. Through this work, I&apos;ve developed expertise in
                     <span className='font-bold'> model performance evaluation, data visualization, and advanced analytics</span>, enabling me to extract meaningful insights from complex datasets.
 
-                    My strong foundation in <span className='font-bold'>Data Science</span> complements my engineering background, allowing me to approach problems from both analytical and computational perspectives. I'm skilled in developing
+                    My strong foundation in <span className='font-bold'>Data Science</span> complements my engineering background, allowing me to approach problems from both analytical and computational perspectives. I&apos;m skilled in developing
                     <span className='font-bold'> predictive models</span> and implementing
                     <span className='font-bold'> statistical analysis techniques</span> to drive data-informed decisions.
 
-                    Beyond my academic focus, I'm passionate about
-                    <span className='font-bold'> Web Development and Web3 technologies</span>. I've built this website using
+                    Beyond my academic focus, I&apos;m passionate about
+                    <span className='font-bold'> Web Development and Web3 technologies</span>. I&apos;ve built this website using
                     <span className='font-bold'> Node.js</span> and am currently exploring
                     <span className='font-bold'> Smart contract programming with Solidity</span>. My goal is to bridge cutting-edge AI research with practical digital solutions, always eager to innovate at the intersection of emerging technologies.
                   </p>
@@ -138,10 +138,10 @@ export default function About() {
                           </a>
                         </p>
                         <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                          <li>Audio Processing Pipeline: Implemented OpenAI's Whisper model to generate time-stamped transcriptions, then applied semantic filtering via OpenAI API to remove non-competitive segments.</li>
+                          <li>Audio Processing Pipeline: Implemented OpenAI&apos;s Whisper model to generate time-stamped transcriptions, then applied semantic filtering via OpenAI API to remove non-competitive segments.</li>
                           <li>Signal Analysis: Engineered a frequency-domain processing system using Fourier transforms and Butterworth filters to isolate commentator and crowd reactions.</li>
                           <li>Highlight Detection Algorithm: Created a frequency-domain peak detection system to identify potential highlight moments based on audience and commentator audio patterns.</li>
-                          <li>Content Analysis: Utilized OpenAI's vision capabilities to generate contextual descriptions of highlight frames.</li>
+                          <li>Content Analysis: Utilized OpenAI&apos;s vision capabilities to generate contextual descriptions of highlight frames.</li>
                         </ul>
                       </div>
                     </div>
@@ -167,7 +167,7 @@ export default function About() {
                         </div>
                         <p className="text-blue-600 font-medium mb-3">University Course Hackathon</p>
                         <ul className='list-disc list-inside text-gray-600 space-y-2'>
-                          <li>Computer Vision Integration: Engineered the core vision analysis component by implementing and optimizing OpenAI's image recognition API.</li>
+                          <li>Computer Vision Integration: Engineered the core vision analysis component by implementing and optimizing OpenAI&apos;s image recognition API.</li>
                           <li>Prompt Engineering: Designed specialized prompts for the vision model to accurately distinguish between natural elements and pollution/debris.</li>
                           <li>Highlight Detection Algorithm: Created a time-domain peak detection system to identify potential highlight moments.</li>
                           <li>Structured Output System: Developed a standardized response framework for environmental monitoring databases.</li>
